@@ -68,7 +68,7 @@ cache-control: no-cache
 
 ```
 
-curl: `curl -X PUT http://localhost:8080/greetings/2019/09/11 -H "Content-type:application/json" -d '{"name": "Kiet T. Tran", "message": "2019/09/11"}'`
+curl: `curl -X PUT http://localhost:8080/greetings/firstname/lastname -H "Content-type:application/json" -d '{"name": "Kiet T. Tran", "message": "2019/09/11"}'`
 
 
 ### Response:
