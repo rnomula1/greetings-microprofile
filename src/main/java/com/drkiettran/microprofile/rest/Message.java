@@ -19,11 +19,20 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Message implements Serializable {
 	private static final long serialVersionUID = 2120914098830910225L;
 
-	@JsonProperty("name")
-	private String name;
+	@JsonProperty("id")
+	private int id;
+
+	@JsonProperty("first-name")
+	private String firstName;
+
+	@JsonProperty("last-name")
+	private String lastName;
 
 	@JsonProperty("message")
 	private String message;
+
+	@JsonProperty("name")
+	private String name;
 
 	public String getName() {
 		return name;
@@ -33,6 +42,29 @@ public class Message implements Serializable {
 		this.name = name;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 	public String getMessage() {
 		return message;
 	}
